@@ -1,0 +1,4 @@
+#!/bin/bash
+#add to $PATH
+~/Desktop/ai/markov/mrkfeed.awk < $1 > $1.db
+~/Desktop/ai/markov/mrkwords.sh $1.db $2|tr '\n' ' ';echo
